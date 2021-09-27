@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         // Ensure node14 is configured in global tools.
-        node "node14"
+        //node "node14"
     }
 
     stages {
