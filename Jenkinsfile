@@ -18,6 +18,13 @@ pipeline {
         stage('Prod Build') {
             steps {
                 sh "npm run build"
+                echo "Archiving build"
+                sh "tar -czf aws-cicd-demo.tar.xz build/*"
+            }
+        }
+        stage('publish docker image') {
+            steps {
+                echo "Pending impl"
             }
         }
     }
