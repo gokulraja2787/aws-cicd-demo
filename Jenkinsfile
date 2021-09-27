@@ -1,4 +1,10 @@
 pipeline {
+
+    environment {
+        registry = "gokul2787/learning-repo"
+        registryCredential = 'dockerhub-creds'
+        dockerImage = ''
+    }
     agent any
 
     stages {
