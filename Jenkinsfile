@@ -28,9 +28,30 @@ pipeline {
                 sh "tar -czf aws-cicd-demo.tar.xz build/*"
             }
         }
-        stage('publish docker image') {
+        stage('Build Docker Image') {
             steps {
-                echo "Pending impl"
+                script {
+                    echo "Running docker build"
+                    dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                }
+            }
+        }
+        stage ('Publish Docker Image') {
+            steps {
+                script {
+                    echo "Publish docker image"
+                    docker.withRegistry( '', registryCredential ) {
+                        dockerImage.push()
+                    }
+                }
+            }
+        }
+        stage ('Clean up') {
+            steps {
+                script {
+                    echo "Cleaning up docker images"
+                    sh "docker rmi $registry:$BUILD_NUMBER"
+                }
             }
         }
     }
