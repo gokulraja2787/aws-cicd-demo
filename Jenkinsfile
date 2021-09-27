@@ -11,6 +11,7 @@ pipeline {
             steps {
                 git([url: 'https://github.com/gokulraja2787/aws-cicd-demo.git', branch: 'main'])
                 sh "npm i"
+                sh "npm run clean"
             }
 
         }
