@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        // Ensure node14 is configured in global tools.
-        //node "node14"
-    }
-
     stages {
         stage('Init') {
             steps {
