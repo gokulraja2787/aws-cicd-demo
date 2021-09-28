@@ -52,7 +52,7 @@ pipeline {
             steps {
                 script {
                     echo "Cleaning up docker images"
-                    sh "docker rmi $registry:$BUILD_NUMBER"
+                    sh "docker rmi $registry:demo-webserver-$BUILD_NUMBER"
                 }
             }
         }
