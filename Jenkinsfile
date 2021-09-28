@@ -32,7 +32,9 @@ pipeline {
             steps {
                 script {
                     echo "Running docker build"
-                    dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                    docker.withRegistry( '', registryCredential ) {
+                        dockerImage = docker.build registry + ":demo-webserver-$BUILD_NUMBER"
+                    }
                 }
             }
         }
