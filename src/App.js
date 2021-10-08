@@ -69,7 +69,7 @@ function App() {
                 Message board
               </header>
               <p class="mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                Work in progress.
               </p>
               <footer class="blockquote-footer">
                 A work in progress <cite>Gokul RANGARAJAN</cite>
