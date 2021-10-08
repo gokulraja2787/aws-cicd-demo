@@ -11,4 +11,3 @@ ADD ./html/503.html /usr/share/nginx/html/error/503.html
 ADD ./html/504.html /usr/share/nginx/html/error/504.html
 RUN cd /etc/nginx/conf.d; rm default.conf
 ADD ./conf.d/default.conf /etc/nginx/conf.d/default.conf
-ADD ./conf.d/proxy.conf /etc/nginx/conf.d/proxy.conf
