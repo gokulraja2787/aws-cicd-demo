@@ -1,7 +1,7 @@
 pipeline {
 
     environment {
-        registry = "gokul2787/learning-repo"
+        registry = "gokul2787/myapp-aws-cicd-demo"
         registryCredential = 'dockerhub-creds'
         dockerImage = ''
     }
@@ -33,7 +33,7 @@ pipeline {
                 script {
                     echo "Running docker build"
                     docker.withRegistry( '', registryCredential ) {
-                        dockerImage = docker.build registry + ":demo-webserver-$BUILD_NUMBER"
+                        dockerImage = docker.build registry + ":latest"
                     }
                 }
             }
@@ -52,7 +52,7 @@ pipeline {
             steps {
                 script {
                     echo "Cleaning up docker images"
-                    sh "docker rmi $registry:demo-webserver-$BUILD_NUMBER"
+                    sh "docker rmi $registry:latest"
                 }
             }
         }
