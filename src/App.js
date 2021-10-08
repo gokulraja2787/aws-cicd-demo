@@ -55,10 +55,10 @@ function App() {
           <Col xs={8}>
             <blockquote class="blockquote">
               <p class="mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                A demo application to learn and show CICD with in AWS
               </p>
               <footer class="blockquote-footer">
-                Someone famous in <cite>Source Title</cite>
+                A work in product <cite>Gokul RANGARAJAN</cite>
               </footer>
             </blockquote>
           </Col>
