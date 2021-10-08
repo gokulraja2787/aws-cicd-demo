@@ -66,7 +66,7 @@ function App() {
           <Col xs={4}>
             <blockquote class="blockquote">
               <header class="blockquote-footer">
-                Message board
+                Message board. Work in progress
               </header>
               <p class="mb-0">
                 Work in progress.
