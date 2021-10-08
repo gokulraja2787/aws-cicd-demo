@@ -37,6 +37,7 @@ function App() {
               <Nav className="me-auto">
                 <Nav.Link href="#profile">Profile</Nav.Link>
                 <Nav.Link href="#message">Messages</Nav.Link>
+                <Nav.Link href="/ci">Jenkins</Nav.Link>
                 <NavDropdown title="Action" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -58,7 +59,7 @@ function App() {
                 A demo application to learn and show CICD with in AWS
               </p>
               <footer class="blockquote-footer">
-                A work in product <cite>Gokul RANGARAJAN</cite>
+                A work in progress <cite>Gokul RANGARAJAN</cite>
               </footer>
             </blockquote>
           </Col>
@@ -71,7 +72,7 @@ function App() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
               </p>
               <footer class="blockquote-footer">
-                Someone famous in <cite>Source Title</cite>
+                A work in progress <cite>Gokul RANGARAJAN</cite>
               </footer>
             </blockquote>
           </Col>
