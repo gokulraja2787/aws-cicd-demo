@@ -56,7 +56,9 @@ function App() {
           <Col xs={8}>
             <blockquote class="blockquote">
               <p class="mb-0">
-                A demo application to learn and show CICD with in AWS
+                A demo application to learn and show CICD with in AWS. 
+                CI Pending
+                CD Pending
               </p>
               <footer class="blockquote-footer">
                 A work in progress <cite>Gokul RANGARAJAN</cite>
