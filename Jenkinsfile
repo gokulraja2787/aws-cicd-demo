@@ -56,5 +56,13 @@ pipeline {
                 }
             }
         }
+        stage ('CD') {
+            steps {
+                script {
+                    echo "Setting auto deploy flag"
+                    sh "echo 1 > /jenkins/CD/flag"
+                }
+            }
+        }
     }
 }
