@@ -31,7 +31,7 @@ function App() {
       <Col xs={12}>
         <Navbar>
           <Container>
-            <Navbar.Brand href="#home">CI/CD Demo</Navbar.Brand>
+            <Navbar.Brand href="#home">Demo application</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -50,7 +50,7 @@ function App() {
           </Container>
         </Navbar>
         <h3>
-          AWS CI/CD Demo - Sample
+          Demo application - Sample
         </h3>
         <Row>
           <Col xs={8}>
