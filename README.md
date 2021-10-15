@@ -1,4 +1,6 @@
 # aws-cicd-demo
+`Result is at:` http://thecrazydeveloper.xyz
+
 A Sample application to demonstrate CI/CD in AWS
 
 Idea is to showcase CI and CD using Jenkins, docker and Amazon ECS.
