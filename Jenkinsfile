@@ -75,8 +75,12 @@ pipeline {
         stage ('CD') {
             steps {
                 script {
-                    echo "Setting auto deploy flag"
-                    sh "echo 1 > /jenkins/CD/flag"
+                    if (env.ENV != 'dev') {
+                        echo "Setting auto deploy flag"
+                        sh "echo 1 > /jenkins/CD/flag"
+                    } else {
+                        echo "No CD in dev"
+                    }
                 }
             }
         }
