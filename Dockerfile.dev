@@ -1,5 +1,5 @@
 FROM nginx:latest
-RUN apt-get update && apt-get install certbot python-certbot-nginx cron -y
+RUN apt-get update && apt-get install certbot python3-certbot-nginx cron -y
 ADD ./aws-cicd-demo.tar.xz /tmp/aws-cicd-demo.tar.xz
 RUN certbot --nginx -d localhost
 ADD ./ssl/renew-ssl-cron /etc/cron.d/renew-ssl-cron

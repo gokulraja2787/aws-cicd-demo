@@ -31,9 +31,15 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    echo "Running docker build"
-                    docker.withRegistry( '', registryCredential ) {
-                        dockerImage = docker.build registry + ":latest"
+                    echo "Running docker build for environment $ENV"
+                    if (env.ENV == 'dev') {
+                        docker.withRegistry( '', registryCredential ) {
+                            sh 'docker build -f Dockerfile.dev . -t ${registry}:dev'
+                        }
+                    } else {
+                        docker.withRegistry( '', registryCredential ) {
+                            dockerImage = docker.build registry + ":latest"
+                        }
                     }
                 }
             }
