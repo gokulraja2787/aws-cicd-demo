@@ -38,7 +38,7 @@ function App() {
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
                     <Nav.Link href="#profile">Profile</Nav.Link>
-                    <Nav.Link href="#message">Messages</Nav.Link>
+                    <Nav.Link href="#message">Contact</Nav.Link>
                     <Nav.Link href="/ci">Jenkins</Nav.Link>
                     <NavDropdown title="Action" id="basic-nav-dropdown">
                       <NavDropdown.Item href="#action/3.1">
