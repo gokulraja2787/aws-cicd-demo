@@ -63,7 +63,7 @@ function App() {
           <main>
             <Container>
               <h3 xs={12} className="text-center">
-                Demo application - Sample
+                Demo application - Change log
               </h3>
               <Row class="mt-4">
                 <Col xs={12} className="d-flex justify-content-center">
@@ -84,8 +84,19 @@ function App() {
                       className="d-flex justify-content-between align-items-start"
                     >
                       <div className="ms-2 me-auto">
-                        <div className="fw-bold text-primary">
+                        <div className="fw-bold text-secondary">
                           Changes by Goutham Rangarajan
+                        </div>
+                        on 2021-10-12
+                      </div>
+                    </ListGroup.Item>
+                    <ListGroup.Item
+                      as="li"
+                      className="d-flex justify-content-between align-items-start"
+                    >
+                      <div className="ms-2 me-auto">
+                        <div className="fw-bold text-primary">
+                          Changes by Gokul Rangarajan: SSL installation
                         </div>
                         on 2021-10-12
                       </div>
