@@ -64,7 +64,11 @@ pipeline {
             steps {
                 script {
                     echo "Cleaning up docker images"
-                    sh "docker rmi $registry:latest"
+                    if (env.ENV == 'dev') {
+                        sh "docker rmi $registry:dev"
+                    } else {
+                        sh "docker rmi $registry:latest"
+                    }
                 }
             }
         }
