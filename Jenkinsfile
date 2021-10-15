@@ -47,9 +47,13 @@ pipeline {
         stage ('Publish Docker Image') {
             steps {
                 script {
-                    echo "Publish docker image"
-                    docker.withRegistry( '', registryCredential ) {
-                        dockerImage.push()
+                    echo "Publish docker image for environment $ENV"
+                    if (env.ENV == 'dev') {
+                        docker push ${registry}:dev
+                    } else {
+                        docker.withRegistry( '', registryCredential ) {
+                            dockerImage.push()
+                        }
                     }
                 }
             }
