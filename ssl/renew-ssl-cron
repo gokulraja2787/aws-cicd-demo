@@ -1,2 +1,0 @@
-0 12 * * * /usr/bin/certbot renew --quiet
-## Run renew certificate every 12 hours
