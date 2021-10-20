@@ -84,7 +84,7 @@ function App() {
                       className="d-flex justify-content-between align-items-start"
                     >
                       <div className="ms-2 me-auto">
-                        <div className="fw-bold text-secondary">
+                        <div className="fw-bold text-info">
                           Changes by Goutham Rangarajan
                         </div>
                         on 2021-10-12
@@ -95,10 +95,21 @@ function App() {
                       className="d-flex justify-content-between align-items-start"
                     >
                       <div className="ms-2 me-auto">
-                        <div className="fw-bold text-primary">
+                        <div className="fw-bold text-success">
                           Changes by Gokul Rangarajan: SSL installation
                         </div>
-                        on 2021-10-12
+                        on 2021-10-15
+                      </div>
+                    </ListGroup.Item>
+                    <ListGroup.Item
+                      as="li"
+                      className="d-flex justify-content-between align-items-start"
+                    >
+                      <div className="ms-2 me-auto">
+                        <div className="fw-bold text-primary">
+                          Changes by Gokul Rangarajan: Demo Commit
+                        </div>
+                        on 2021-10-20
                       </div>
                     </ListGroup.Item>
                   </ListGroup>
